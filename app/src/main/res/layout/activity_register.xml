@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.NoActionBar">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".Activties.RegisterActivity">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/searchc7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            app:cardBackgroundColor="?attr/colorButtonNormal"
+            app:layout_constraintTop_toBottomOf="@id/textviewc5"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="3dp"
+            card_view:contentPadding="4dp"
+            tools:layout_editor_absoluteX="5dp">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/sv_map"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="20dp"
+                android:clickable="true"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:queryHint="Search ..."
+                tools:layout_editor_absoluteX="30dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/textviewc2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            app:layout_constraintTop_toBottomOf="@id/textviewc1"
+            card_view:cardBackgroundColor="?attr/colorButtonNormal"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="3dp"
+            card_view:contentPadding="4dp"
+            tools:layout_editor_absoluteX="10dp">
+
+
+            <LinearLayout
+                android:id="@+id/linearname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="30dp"
+                android:background="?attr/colorButtonNormal"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="30dp">
+
+
+                <EditText
+                    android:id="@+id/editTextname"
+                    android:layout_width="207dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/reg_editext_style" />
+
+                <TextView
+                    android:id="@+id/textViewname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Enter Your Name"
+                    android:textColor="@color/colorPrimary" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/textviewc3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            app:layout_constraintTop_toBottomOf="@id/textviewc2"
+            card_view:cardBackgroundColor="?attr/colorButtonNormal"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="3dp"
+            card_view:contentPadding="4dp">
+
+            <LinearLayout
+                android:id="@+id/lineardescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="30dp">
+
+
+                <EditText
+                    android:id="@+id/editTextdescription"
+                    android:layout_width="207dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/reg_editext_style" />
+
+                <TextView
+                    android:id="@+id/textViewdescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Enter the desciption"
+                    android:textColor="@color/colorPrimary" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/textviewc4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            app:layout_constraintTop_toBottomOf="@id/textviewc3"
+
+            card_view:cardBackgroundColor="?attr/colorButtonNormal"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="3dp"
+            card_view:contentPadding="4dp">
+
+            <LinearLayout
+                android:id="@+id/linearplace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+
+                tools:layout_editor_absoluteX="30dp">
+
+
+                <EditText
+                    android:id="@+id/editTextplace"
+                    android:layout_width="207dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/reg_editext_style" />
+
+                <TextView
+                    android:id="@+id/textViewpace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Enter Your place"
+                    android:textColor="@color/colorPrimary" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/textviewc5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            app:layout_constraintTop_toBottomOf="@id/textviewc4"
+
+            card_view:cardBackgroundColor="?attr/colorButtonNormal"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="3dp"
+            card_view:contentPadding="4dp">
+
+            <LinearLayout
+                android:id="@+id/lineartime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+
+                tools:layout_editor_absoluteX="30dp">
+
+
+                <EditText
+                    android:id="@+id/editTexttiime"
+                    android:layout_width="207dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/reg_editext_style" />
+
+                <TextView
+                    android:id="@+id/textViewtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Enter the time"
+                    android:textColor="@color/colorPrimary" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/textviewc1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:foreground="?selectableItemBackground"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            card_view:cardBackgroundColor="?attr/colorButtonNormal"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="3dp"
+            card_view:contentPadding="4dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:text="Hello, Add your Event Here"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            app:layout_constraintTop_toBottomOf="@id/fragc6"
+
+            card_view:cardBackgroundColor="?attr/colorButtonNormal"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="3dp"
+            card_view:contentPadding="4dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearbutton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="30dp"
+
+                >
+
+                <Button
+                    android:id="@+id/buttonstart"
+                    android:layout_width="115dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/reg_btn_style"
+                    android:text="Save"
+                    android:textColor="#ffffff"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ProgressBar
+                    android:id="@+id/buttonNext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/buttonstart" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fragc6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            app:layout_constraintTop_toBottomOf="@id/searchc7"
+            card_view:cardBackgroundColor="?attr/colorButtonNormal"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="3dp"
+            card_view:contentPadding="4dp"
+            tools:layout_editor_absoluteX="5dp">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+
+                tools:layout_editor_absoluteX="30dp" />
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
